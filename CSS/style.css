@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* navbar */
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    padding: 8px 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-name img {
+    width: 3rem;
+    filter: invert(1);
+    margin: 0px 10px;
+}
+
+.button-link {
+    padding: 5px 30px;
+    margin: 0px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.button-link:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+[type="text"] {
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+/* background */
+
+#background {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    color: rgb(14, 24, 70);
+}
+
+#background::before {
+    content: "";
+    background: url(../Images/background.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 1;
+}
+
+#background h2 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 13rem 0rem 1rem 0rem;
+    font-family: 'Fleur De Leah', cursive;
+}
+
+#background p {
+    font-size: 28px;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-weight: bold;
+}
+
+
+/* product-1/2/3/4 */
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Style Script', cursive;
+}
+
+.product{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    justify-content: center;
+    align-items: center;
+    margin: 1rem  0rem;
+    /* border-radius: 10px; */
+    background-color: rgb(243, 243, 243);
+    /* border: 2px solid #f5b466; */
+    padding: 1rem;
+}
+
+.product img{
+    margin: 0rem 2rem;
+    border-radius: 2rem;
+    padding: 5px;
+    border: 2px solid #8da5ff;
+    background-color: #b1d3eb;
+}
+
+.product p{
+    background-color: #b1d3eb;
+    margin: 0rem 2rem;
+    /* border: 2px solid #ffe199; */
+    border-radius: 10px;
+    /* border-bottom-right-radius: 0px; */
+    padding: 1rem;
+    font-size: 1.6rem;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+
+/* contact */
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+#contact img{
+    width: 2.2rem;
+    filter: invert(1);
+}
+#contact-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#contact-link a{
+    margin: 5px 20px;
+}
